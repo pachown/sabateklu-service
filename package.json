@@ -4,7 +4,7 @@
   "description": "Plan Your Visit",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --mode=development",
+    "start": "node database/seed.js && node server/index.js",
     "build": "webpack --mode=production",
     "dev": "webpack serve",
     "seed": "node database/seed.js",
